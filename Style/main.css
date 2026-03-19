@@ -17,8 +17,8 @@
   background-color: var(--Purple);
   color: white;
   display: grid;
-  grid-template-rows: repeat(3, auto);
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto);
   padding: 50px;
   padding-bottom: 0;
   column-gap: 60px;
@@ -95,6 +95,23 @@ section.links-icon ul li .ionicon:hover {
   color: var(--Magenta);
   border-color: var(--Magenta);
 }
+/* Footer */
+footer {
+  grid-column: span 2;
+  text-align: center;
+  transform: translateY(-30px);
+}
+footer .attribution {
+  color: white;
+  font-family: "Open Sans";
+}
+footer .attribution a {
+  text-decoration: none;
+  color: white;
+}
+footer .attribution a:hover {
+  color: var(--Magenta);
+}
 /* Media Screen */
 @media (max-width: 1199px) {
   .container {
@@ -102,7 +119,7 @@ section.links-icon ul li .ionicon:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: fit-content;
+    height: 188vh;
     width: fit-content;
     gap: 50px;
   }
