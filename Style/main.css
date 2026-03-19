@@ -98,7 +98,6 @@ section.links-icon ul li .ionicon:hover {
 /* Media Screen */
 @media (max-width: 1199px) {
   .container {
-    background-color: red;
     display: flex;
     flex-direction: column;
     align-items: center;
