@@ -1,1 +1,11 @@
- 
+/* Variables */
+:root {
+  --Purple: #674baf;
+  --Magenta: #e882e8;
+}
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
