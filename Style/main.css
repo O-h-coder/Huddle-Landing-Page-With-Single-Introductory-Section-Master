@@ -9,3 +9,118 @@
   margin: 0;
   box-sizing: border-box;
 }
+/* Container */
+.container {
+  background-image: url("../images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--Purple);
+  color: white;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: repeat(2, 1fr);
+  padding: 50px;
+  padding-bottom: 0;
+  column-gap: 60px;
+  height: 100vh;
+}
+/* Section Logo */
+section.logo {
+  grid-column: span 2;
+  padding-bottom: 50px;
+}
+/* Section One */
+section.main-1 {
+  grid-column: span 1;
+  text-align: center;
+}
+/* Section Two */
+section.main-2 {
+  grid-column: span 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  padding-bottom: 150px;
+  min-width: 500px;
+}
+section.main-2 h1 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+section.main-2 p {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 2;
+}
+section.main-2 a {
+  text-decoration: none;
+  padding: 10px 50px;
+  background-color: white;
+  color: var(--Purple);
+  border-radius: 30px;
+  width: fit-content;
+  text-align: center;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 18px;
+  box-shadow: 0 0 15px 0px #000000b8;
+}
+section.main-2 a:hover {
+  background-color: var(--Magenta);
+  color: white;
+}
+/* Section Links */
+section.links-icon {
+  grid-column: span 2;
+  transform: translateY(-50px);
+}
+section.links-icon ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+section.links-icon ul li .ionicon {
+  width: 35px;
+  border: 2px solid white;
+  border-radius: 50%;
+  color: white;
+  padding: 5px;
+}
+section.links-icon ul li .ionicon:hover {
+  color: var(--Magenta);
+  border-color: var(--Magenta);
+}
+/* Media Screen */
+@media (max-width: 1199px) {
+  .container {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: fit-content;
+    gap: 50px;
+  }
+  section.logo {
+    align-self: flex-start;
+  }
+  section.main-1 img {
+    width: 80%;
+  }
+  section.main-2 {
+    text-align: center;
+    align-items: center;
+    padding: 0;
+    padding-bottom: 0;
+  }
+  section.links-icon {
+    transform: none;
+    padding-bottom: 50px;
+  }
+}
